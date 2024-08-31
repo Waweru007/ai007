@@ -1,8 +1,4 @@
 #!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
 
 #Install the dependencies
 import numpy as np
@@ -17,17 +13,9 @@ st.header("Forta PRICE MODELING")
 plt.style.use('bmh')
 ###Fetching the Data
 
-
-# In[ ]:
-
-
 tickers= ['FORT20622-USD']
 df=yf.download(tickers,start="2023-1-1", end='2024-12-31')
 df1=df['Close']
-
-
-# In[ ]:
-
 
 df.head()
 
@@ -166,8 +154,8 @@ testPredictPlot = numpy.empty_like(df1)
 testPredictPlot[:, :] = numpy.nan
 testPredictPlot[len(train_predict)+(look_back*2)+1:len(df1)-1, :] = test_predict
 # plot baseline and predictions
-plt.plot(scaler.inverse_transform(df1))
-plt.plot(trainPredictPlot)
+# plt.plot(scaler.inverse_transform(df1))
+# plt.plot(trainPredictPlot)
 # plt.plot(testPredictPlot)
 # plt.show()
 
