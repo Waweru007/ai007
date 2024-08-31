@@ -13,7 +13,7 @@ from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
 import yfinance as yf
 import streamlit as st
-st.header("BTC PRICE MODELING")
+st.header("Forta PRICE MODELING")
 plt.style.use('bmh')
 ###Fetching the Data
 
@@ -23,7 +23,7 @@ plt.style.use('bmh')
 
 tickers= ['FORT20622-USD']
 df=yf.download(tickers,start="2023-1-1", end='2024-12-31')
-df1=df['Low']
+df1=df['Close']
 
 
 # In[ ]:
@@ -194,7 +194,7 @@ from numpy import array
 lst_output=[]
 n_steps=100
 i=0
-while(i<2):
+while(i<1):
     
     if(len(temp_input)>100):
         #print(temp_input)
@@ -228,7 +228,7 @@ print(lst_output)
 
 ######7
 day_new=np.arange(1,101)
-day_pred=np.arange(101,102)
+day_pred=np.arange(101,101)
 
 
 # In[ ]:
@@ -278,13 +278,7 @@ df3 = pd.concat([df, predictions], ignore_index=True)
 df4=df3.reset_index()
 
 
-# In[ ]:
-
-
 df4.tail(10)
-
-
-# In[ ]:
 
 
 import plotly.express as px
@@ -293,16 +287,3 @@ fig = px.line(df4, x="Date", y="Close")
 
 st.plotly_chart(fig)
 st.plotly_chart(fig, use_container_width=False)
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
