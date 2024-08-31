@@ -266,7 +266,8 @@ df3 = pd.concat([df, predictions], ignore_index=True)
 df4=df3.reset_index()
 
 
-df4.tail(10)
+data=df4.tail(10)
+data
 
 
 import plotly.express as px
