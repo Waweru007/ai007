@@ -7,9 +7,9 @@
 #Install the dependencies
 import numpy as np
 import pandas as pd
-from sklearn.tree import DecisionTreeRegressor
-from sklearn.linear_model import LinearRegression
-from sklearn.model_selection import train_test_split
+from scikit-learn.tree import DecisionTreeRegressor
+from scikit-learn.linear_model import LinearRegression
+from scikit-learn.model_selection import train_test_split
 import matplotlib.pyplot as plt
 import yfinance as yf
 import streamlit as st
@@ -43,7 +43,7 @@ df.tail()
 
 ########2
 import numpy as np
-from sklearn.preprocessing import MinMaxScaler
+from scikit-learn.preprocessing import MinMaxScaler
 scaler=MinMaxScaler(feature_range=(0,1))
 df1=scaler.fit_transform(np.array(df1).reshape(-1,1))
 
@@ -141,7 +141,7 @@ test_predict=scaler.inverse_transform(test_predict)
 #####4
 ### Calculate RMSE performance metrics
 import math
-from sklearn.metrics import mean_squared_error
+from scikit-learn.metrics import mean_squared_error
 BacktestError=math.sqrt(mean_squared_error(y_train,train_predict))
 BacktestError
 len(train_predict)
