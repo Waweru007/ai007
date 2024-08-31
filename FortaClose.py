@@ -131,7 +131,7 @@ test_predict=scaler.inverse_transform(test_predict)
 import math
 from sklearn.metrics import mean_squared_error
 BacktestError=math.sqrt(mean_squared_error(y_train,train_predict))
-BacktestError
+# BacktestError
 len(train_predict)
 len(y_train)
 
