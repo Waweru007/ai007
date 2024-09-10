@@ -270,9 +270,9 @@ data=df4.tail(10)
 data
 
 
-import plotly.express as px
-fig = px.line(df4, x="Date", y="Close")
+# import plotly.express as px
+# fig = px.line(df4, x="Date", y="Close")
 # fig.show()
 
 # st.plotly_chart(fig)
-st.plotly_chart(fig, use_container_width=False)
+# st.plotly_chart(fig, use_container_width=False)
