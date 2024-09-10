@@ -9,7 +9,7 @@ from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
 import yfinance as yf
 import streamlit as st
-st.header("Forta PRICE MODELING")
+st.header("FORTA PRICE MODELING")
 plt.style.use('bmh')
 ###Fetching the Data
 
