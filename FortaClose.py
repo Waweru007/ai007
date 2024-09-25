@@ -267,7 +267,9 @@ df4=df3.reset_index()
 
 
 data=df4.tail(10)
-data
+dat = data.style.format({"Close": "{:.6f}".format})
+
+dat
 
 
 # import plotly.express as px
