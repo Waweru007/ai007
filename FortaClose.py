@@ -268,7 +268,6 @@ df4=df3.reset_index()
 
 data=df4.tail(10)
 dat = data.style.format({"Close": "{:.6f}".format})
-
 dat
 
 
