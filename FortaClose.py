@@ -182,7 +182,7 @@ from numpy import array
 lst_output=[]
 n_steps=100
 i=0
-while(i<1):
+while(i<2):
     
     if(len(temp_input)>100):
         #print(temp_input)
