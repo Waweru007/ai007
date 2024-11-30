@@ -9,11 +9,10 @@ from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
 import yfinance as yf
 import streamlit as st
-st.header("Celu Stock Price Modeling")
+st.header("Forta Stock Price Modeling")
 plt.style.use('bmh')
 ###Fetching the Data
-
-tickers= ['celu']
+tickers= ['FORT20622-USD']
 df=yf.download(tickers,start="2023-1-1", end='2024-12-31')
 df1=df['Close']
 
